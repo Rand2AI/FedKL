@@ -1,0 +1,58 @@
+{
+  "NAME": "FedKL",
+  "AUTHOR": "HANCHI REN, JINGJING DENG, XIANGHUA XIE, Xiaoke Ma and Jianfeng Ma",
+  "INSTUTITE": ["Vision and Machine Learning Group, Computer Science, Swansea University, United Kingdom",
+                "The School of Computer Science and Technology, Xidian University, China",
+                "The School of Cyber Engineering, Xidian University, China"],
+  "METHODS": "FedKL",
+  "METHODS_SET": ["Normal", "FedAvg", "FedKL"],
+  "DEBUG": false,
+
+  "DEFENCE_NETWORK": {
+  "WITH_DEFENCE": false,
+  "ALL_LAYER": false,
+  "KEY_LENGTH": 1024
+  },
+  "DEVICE": {
+    "DEVICE_TOUSE": "GPU",
+    "DEVICE_GPUID": [0]
+  },
+  "NETWORK": {
+    "BACKBONE": "resnet",
+    "BACKBONE_SET": ["lenet", "resnet", "vgg16"],
+    "LAYER_NUMBER": 34,
+    "RESNET_LAYER_NUMBER_SET": [18, 34, 20, 32]
+  },
+
+  "DATA": {
+    "DATA_ROOT": "",
+    "TRAIN_DATA": "cifar100",
+    "DATA_LIST": ["mnist", "cifar100", "ilsvrc2012", "cifar10"],
+    "IMG_SIZE": [224, 224],
+    "IS_IID": true
+  },
+  "OPTIMIZER": {
+    "OPT_BACKPROP": "sgd",
+    "OPT_BACKPROP_SET": ["sgd", "adam", "rmsprop", "adadelta"],
+    "LEARNING_RATE": 0.01,
+    "DECAY": 5e-4,
+    "MOMENTUM": 0.9,
+    "SGD_NESTEROV": true
+  },
+  "TRAIN": {
+    "FINETUNE": false,
+    "WEIGHT_TOLOAD": "",
+    "BATCH_SIZE": 64,
+    "ROUNDS": 200,
+    "SAVE_ROOT": ""
+  },
+  "FED": {
+    "CLIENTS_NUM": 3,
+    "FRACTION": 1,
+    "CLIENT_EPOCH": 1
+  },
+  "TEST": {
+    "ROOT_PATH": "",
+    "MODEL_NAME": ""
+  }
+}
