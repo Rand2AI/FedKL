@@ -28,6 +28,8 @@ tqdm==4.45.0
 
 <div align=center><img src="https://github.com/Rand2AI/FedKL/blob/main/images/example_2.png"/></div>
 
+<div align=center><img src="https://github.com/Rand2AI/FedKL/blob/main/images/example_3.png"/></div>
+
 ## Performance
 
 <div align=center><img src="https://github.com/Rand2AI/FedKL/blob/main/images/accuracy.png"/></div>
