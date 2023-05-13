@@ -1,4 +1,4 @@
-# FedKL: Gradient Leakage Defense with Key-Lock Module for Federated Learning
+# Gradient Leakage Defense with Key-Lock Module for Federated Learning
 
 ## Introduction
 
