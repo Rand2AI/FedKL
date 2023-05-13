@@ -38,15 +38,15 @@ tqdm==4.45.0
 
 ## Citation
 
-If you find this work helpful for your research, please cite the following paper:
+If you find this work helpful for your research, please cite the following pre-print paper:
 
     @article{,
              author = {Ren, Hanchi and Deng, Jingjing and Xie, Xianghua and Ma, Xiaoke and Ma, Jianfeng},
-             title = {FedKL: Gradient Leakage Defense with Key-Lock Module for Federated Learning},
+             title = {Gradient Leakage Defense with Key-Lock Module for Federated Learning},
              year = {2023},
              publisher = {},
              address = {},
              issn = {},
-             url = {},
-             journal = {}
+             url = {https://arxiv.org/abs/2305.04095},
+             journal = {arXiv preprint arXiv:2305.04095}
             }
